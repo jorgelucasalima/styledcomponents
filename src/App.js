@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Container, Head, Titulo, BemVindo} from './styles.js'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Head>
+        <Titulo>Projeto Styled components</Titulo>
+      </Head>
+
+      <BemVindo cor="00FF00" tamanho="50">
+        Bem vindo ao projeto
+      </BemVindo>
+    </Container>
+    
   );
 }
 
 export default App;
+
+
+/*
+Antigo
+
+    <div className="container">
+      <header className="header">
+        <a className="titulo">Projeto Styled</a>
+      </header>
+
+      <h1>Bem vindo ao sistema</h1>
+    </div>
+*/
